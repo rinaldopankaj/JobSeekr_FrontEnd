@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react'
 
 function RecentJobsSection() {
@@ -20,7 +21,8 @@ function RecentJobsSection() {
             {
                 recentJob.map((job) => (
                     <div key={job?._id} className='col-span-2 px-2 flex mb-4'>
-                        <img className='md:w-24 md:h-24 w-16 h-16 object-fit md:rounded-lg mr-4 md:ml-4' src={job.image} alt={job.title} />
+                        {/* <img className='md:w-24 md:h-24 w-16 h-16 object-fit md:rounded-lg mr-4 md:ml-4' src={job.image} alt={job.title} /> */}
+                        <Image className='md:w-24 md:h-24 w-16 h-16 object-fit md:rounded-lg mr-4 md:ml-4' src={job.image} alt={job.title} width={100} height={100} />
                         <div className='flex flex-col'>
                             <h6 className='md:text-lg text-base'>{job.title}</h6>
                             <p className='md:text-base text-xs'>{job.date}</p>

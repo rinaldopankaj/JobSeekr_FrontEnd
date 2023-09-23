@@ -2,6 +2,7 @@
 const nextConfig = {
   images: {
     // domains: ['pexels.com'],
+    unoptimized : true,
     remotePatterns: [
       {
         protocol: 'https',

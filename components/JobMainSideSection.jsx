@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const JobMainSideSection = ({ obj }) => {
@@ -7,7 +8,8 @@ const JobMainSideSection = ({ obj }) => {
             <div className='max-w-[1240px] m-auto md:mt-8 mt-2 md:grid grid-cols-3 gap-8'>
 
                 <div className='col-span-3 md:px-6 px-2 '>
-                    <img className='md:h-1/4 w-full object-cover md:rounded-xl rounded-lg' src={obj.image} alt={""} />
+                    {/* <img className='md:h-1/4 w-full object-cover md:rounded-xl rounded-lg' src={obj.image} alt={""} /> */}
+                    <Image className='md:h-1/4 w-full object-cover md:rounded-xl rounded-lg' src={obj.image} alt={""} width={100} height={100} />
                     <p className='md:mt-4 mt-1 md:text-base text-xs'>{obj.date}</p>
                     {/* <h2 className='md:mt-2 mt-1 md:text-base text-lg'>{obj.title}</h2> */}
                     {/* <p className='md:mt-2 mt-1 md:text-base text-sm'>{obj.desc}</p> */}
