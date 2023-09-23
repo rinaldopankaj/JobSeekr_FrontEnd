@@ -5,7 +5,7 @@ import Link from 'next/link'
 // import AboutImg from '../public/assets/projects/AirBnbClone.png'
 
 function BannerSection({ image, date, title, desc, _id }) {
-    console.log(_id)
+    // console.log(_id)
     return (
 
         <Link href={`/jobs/${_id}`} style={{ textDecoration: "none" }}>

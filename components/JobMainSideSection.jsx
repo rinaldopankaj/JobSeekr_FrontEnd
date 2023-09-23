@@ -42,7 +42,7 @@ const JobMainSideSection = ({ obj }) => {
                             {/* <p className='md:mt-4 mt-2 md:text-base text-sm'>{obj.requiredSkills}</p> */}
                             {
                                 obj.requiredSkills?.map((data, idx) => (
-                                    <li className='text-sm ml-2 mt-1'>{data}</li>
+                                    <li key={data?._id} className='text-sm ml-2 mt-1'>{data}</li>
                                 ))
                             }
                         </div>
